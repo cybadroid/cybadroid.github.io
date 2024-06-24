@@ -45,41 +45,7 @@
 
         </p>
 
-<svg width="480" height="96">
-    <script>
-      // Generate random coordinates, radius, grayscale, and opacity for circles
-      function generateRandomCircles(numCircles, width, height) {
-        var circles = [];
-        for (var i = 0; i < numCircles; i++) {
-          var x = Math.random() * width;
-          var y = Math.random() * height;
-          var radius = Math.random() * 50 + 10; // Random radius between 10 and 60
-          var grayscale = Math.random() * 255; // Random grayscale value between 0 and 255
-          var opacity = Math.random() * (1.0 - 0.35) + 0.35; // Random opacity between 0.35 and 1.0
-          circles.push({ x: x, y: y, radius: radius, grayscale: grayscale, opacity: opacity });
-        }
-        return circles;
-      }
-      
-      // Draw circles on the SVG
-      function drawCircles(circles) {
-        var svg = document.querySelector("svg");
-        circles.forEach(function(circle) {
-          var circleElement = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-          circleElement.setAttribute("cx", circle.x);
-          circleElement.setAttribute("cy", circle.y);
-          circleElement.setAttribute("r", circle.radius);
-          circleElement.setAttribute("fill", "rgb(" + circle.grayscale + ", " + circle.grayscale + ", " + circle.grayscale + ")");
-          circleElement.setAttribute("fill-opacity", circle.opacity);
-          svg.appendChild(circleElement);
-        });
-      }
-      
-      // Generate and draw 50 random circles on the SVG
-      var circles = generateRandomCircles(50, 500, 500);
-      drawCircles(circles);
-    </script>
-  </svg>
+
 
 
       </div>
@@ -157,7 +123,7 @@ Known recovery pipeline
             </p>
             
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" style="background-color: #444;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="background-color: #444;">
                 <text id="text" x="240" y="150" fill="white" font-size="96" text-anchor="middle">services</text>
                 <polygon id="triangle" points="240 180, 300 300, 180 300" fill="lime">
                   <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.4 1; 0.4 0 0.4 1" keyTimes="0; 0.5; 1" values="0 -20; 0 20; 0 -20" />
