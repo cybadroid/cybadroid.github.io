@@ -14,7 +14,7 @@ body {
     color: #7f8c8d;
     font-size: 13px;
     /* background: rgb(9,9,121); */
-    background: linear-gradient(180deg, rgba(9,9,121,1) 9%, rgba(77,73,146,1) 58%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(180deg, rgba(9,9,121,1) 10%, rgba(77,73,146,1) 20%, rgba(0,212,255,1) 70%);
 
 }
 
