@@ -289,16 +289,3 @@ a.pure-button-primary {
     }
 }
 
-
-#emoji-grid {
-    display: grid;
-    grid-gap: 10px;
-    max-width: 480px;
-  }
-
-  .emoji-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 64px;
-  }

@@ -155,26 +155,7 @@ Known recovery pipeline
 
                   </p>
   
-                  <div id="emoji-grid"></div>
 
-<script>
-  const emojiGrid = document.getElementById("emoji-grid");
-  const emojis = ["😂", "❤️", "😍", "🤣", "😊", "👍", "😭", "😘", "🙌", "😩","😁", "😎", "🤔", "😏", "🤩", "😒", "😅", "🙏", "😔", "😌", "😢", "😆", "😱", "😬", "🤗", "😑", "😕", "😞", "😴", "🤭", "😮", "😡", "😇", "😤", "🙃", "😛", "🤪", "🤤", "😶", "🙄", "🤐", "😪", "😓", "😷", " ", "🤷"];
-  const gridSize = 6;
-
-  emojiGrid.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
-  emojiGrid.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
-
-  for (let i = 0; i < gridSize; i++) {
-    for (let j = 0; j < gridSize; j++) {
-      const randomIndex = Math.floor(Math.random() * emojis.length);
-      const emojiElement = document.createElement("div");
-      emojiElement.classList.add("emoji-item");
-      emojiElement.innerText = emojis[randomIndex];
-      emojiGrid.appendChild(emojiElement);
-    }
-  }
-</script>
 
               </div>
           </div>
