@@ -100,7 +100,7 @@ a.pure-button-primary {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu {
-    background: #2d3e50;
+    background: #333;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -288,3 +288,17 @@ a.pure-button-primary {
         font-size: 300%;
     }
 }
+
+
+#emoji-grid {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 480px;
+  }
+
+  .emoji-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+  }
