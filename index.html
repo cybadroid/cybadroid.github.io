@@ -44,6 +44,42 @@
         </p>
 <img width="240" height="240" alt="logo"  src="https://cybadroid.github.io/cybadroid.png">
 
+<svg width="500" height="500">
+    <script>
+      // Generate random coordinates, radius, grayscale, and opacity for circles
+      function generateRandomCircles(numCircles, width, height) {
+        var circles = [];
+        for (var i = 0; i < numCircles; i++) {
+          var x = Math.random() * width;
+          var y = Math.random() * height;
+          var radius = Math.random() * 50 + 10; // Random radius between 10 and 60
+          var grayscale = Math.random() * 255; // Random grayscale value between 0 and 255
+          var opacity = Math.random() * (1.0 - 0.35) + 0.35; // Random opacity between 0.35 and 1.0
+          circles.push({ x: x, y: y, radius: radius, grayscale: grayscale, opacity: opacity });
+        }
+        return circles;
+      }
+      
+      // Draw circles on the SVG
+      function drawCircles(circles) {
+        var svg = document.querySelector("svg");
+        circles.forEach(function(circle) {
+          var circleElement = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+          circleElement.setAttribute("cx", circle.x);
+          circleElement.setAttribute("cy", circle.y);
+          circleElement.setAttribute("r", circle.radius);
+          circleElement.setAttribute("fill", "rgb(" + circle.grayscale + ", " + circle.grayscale + ", " + circle.grayscale + ")");
+          circleElement.setAttribute("fill-opacity", circle.opacity);
+          svg.appendChild(circleElement);
+        });
+      }
+      
+      // Generate and draw 50 random circles on the SVG
+      var circles = generateRandomCircles(50, 500, 500);
+      drawCircles(circles);
+    </script>
+  </svg>
+  
 
       </div>
   </div>
