@@ -18,6 +18,155 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
   
 
+
+     <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+    body {
+      margin: 0px;
+      font-family: 'Roboto';
+      text-align: center;
+      background-color: #121111;
+
+    }
+
+    #container {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: bold;
+      position: fixed;
+      width: 100%;
+      display: block;
+      padding: 0.1em;
+      
+       box-shadow:
+    0 0 60px 30px #ff0000,  /* inner  */
+    0 0 100px 60px #773333, /* middle  */
+    0 0 140px 90px #000000; /* outer  */
+    }
+
+    #flip {
+      height: 90px;
+      /* Adjust height to match the size of the visible area */
+      overflow: hidden;
+    }
+
+    #flip>div>div {
+      color: #fff;
+      padding: 4px 3px;
+      height: 45px;
+      margin-bottom: 45px;
+      display: inline-block;
+    }
+
+    #flip div:first-child {
+      animation: show 10s linear infinite;
+      /* Adjust duration to match the number of items */
+    }
+
+    #flip div div {
+      background: #FF5722;
+    }
+
+    #flip div:nth-child(1) div {
+      background: #5D2A2A;
+    }
+
+    #flip div:nth-child(2) div {
+      background: #FFA000;
+    }
+
+    #flip div:nth-child(3) div {
+      background: #7F3F3F;
+      color: #000;
+    }
+
+    #flip div:nth-child(4) div {
+      background: #FF8C00;
+    }
+
+    #flip div:nth-child(5) div {
+      background: #F57C00;
+    }
+
+    #flip div:nth-child(6) div {
+      background: #6E2D2D;
+      color: #fff;
+    }
+
+    #flip div:nth-child(7) div {
+      background: #FF6347;
+    }
+
+    #flip div:nth-child(8) div {
+      background: #FF7043;
+    }
+
+    #flip div:nth-child(9) div {
+      background: #F4511E;
+    }
+
+    #flip div:nth-child(10) div {
+      background: #FF5722;
+    }
+
+    @keyframes show {
+      0% {
+        margin-top: -450px;
+      }
+
+      10% {
+        margin-top: -360px;
+      }
+
+      20% {
+        margin-top: -360px;
+      }
+
+      30% {
+        margin-top: -270px;
+      }
+
+      40% {
+        margin-top: -270px;
+      }
+
+      50% {
+        margin-top: -180px;
+      }
+
+      60% {
+        margin-top: -180px;
+      }
+
+      70% {
+        margin-top: -90px;
+      }
+
+      80% {
+        margin-top: -90px;
+      }
+
+      90% {
+        margin-top: 0px;
+      }
+
+      100% {
+        margin-top: 0px;
+      }
+    }
+
+    p {
+      position: fixed;
+      width: 100%;
+      color: #999;
+      margin-top: 200px;
+    }
+  </style>
+
+
+    
   </head>
 
 
@@ -39,6 +188,44 @@
   <p>
     <a href="https://cybadroid.github.io" class="pure-button pure-button-primary">home</a>
 </p>
+
+       <div id="container">
+    <h1>CYBER</H1>
+    <div id="flip">
+
+      <!-- two divs, one is another container later-->
+      <div>•<div>Network Security</div>
+      </div>
+      <div>
+        <div>Cryptography</div>
+      </div>
+      <div>
+        <div>Vulnerability Assessment</div>
+      </div>
+      <div>
+        <div>Incident Response</div>
+      </div>
+      <div>
+        <div>Threat Intelligence</div>
+      </div>
+      <div>
+        <div>Penetration Testing</div>
+      </div>
+      <div>
+        <div>Security Policies</div>
+      </div>
+      <div>
+        <div>Access Control</div>
+      </div>
+      <div>
+        <div>Data Protection</div>
+      </div>
+      <div>
+        <div>Cloud Security</div>
+      </div>
+    </div>
+  </div>
+      
   <div class="splash-container">
       <div class="splash">
           <h1 class="splash-head">cybadroid</h1>
