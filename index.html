@@ -3,6 +3,135 @@
 
 <head>
   <style>
+    #container {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: bold;
+      position: fixed;
+      width: 100%;
+      display: block;
+      padding: 0.1em;
+      box-shadow:
+        0 0 60px 30px #ff0000,
+        /* inner  */
+        0 0 100px 60px #773333,
+        /* middle  */
+        0 0 140px 90px #000000;
+      /* outer  */
+    }
+
+    #flip {
+      height: 90px;
+      /* Adjust height to match the size of the visible area */
+      overflow: hidden;
+    }
+
+    #flip>div>div {
+      color: #fff;
+      padding: 4px 3px;
+      height: 45px;
+      margin-bottom: 45px;
+      display: inline-block;
+    }
+
+    #flip div:first-child {
+      animation: show 10s linear infinite;
+      /* Adjust duration to match the number of items */
+    }
+
+    #flip div div {
+      background: #FF5722;
+    }
+
+    #flip div:nth-child(1) div {
+      background: #5D2A2A;
+    }
+
+    #flip div:nth-child(2) div {
+      background: #FFA000;
+    }
+
+    #flip div:nth-child(3) div {
+      background: #7F3F3F;
+      color: #000;
+    }
+
+    #flip div:nth-child(4) div {
+      background: #FF8C00;
+    }
+
+    #flip div:nth-child(5) div {
+      background: #F57C00;
+    }
+
+    #flip div:nth-child(6) div {
+      background: #6E2D2D;
+      color: #fff;
+    }
+
+    #flip div:nth-child(7) div {
+      background: #FF6347;
+    }
+
+    #flip div:nth-child(8) div {
+      background: #FF7043;
+    }
+
+    #flip div:nth-child(9) div {
+      background: #F4511E;
+    }
+
+    #flip div:nth-child(10) div {
+      background: #FF5722;
+    }
+
+    @keyframes show {
+      0% {
+        margin-top: -450px;
+      }
+
+      10% {
+        margin-top: -360px;
+      }
+
+      20% {
+        margin-top: -360px;
+      }
+
+      30% {
+        margin-top: -270px;
+      }
+
+      40% {
+        margin-top: -270px;
+      }
+
+      50% {
+        margin-top: -180px;
+      }
+
+      60% {
+        margin-top: -180px;
+      }
+
+      70% {
+        margin-top: -90px;
+      }
+
+      80% {
+        margin-top: -90px;
+      }
+
+      90% {
+        margin-top: 0px;
+      }
+
+      100% {
+        margin-top: 0px;
+      }
+    }
+
     .bubble1 {
       animation: rise1 12s infinite;
       transform-origin: center;
@@ -59,245 +188,226 @@
       dominant-baseline: middle;
     }
   </style>
-  
-  
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="cybadroids homepage">
-    <title>cybadroid cybersecurity services</title>
-    <link rel="stylesheet" href="/css/pure/pure-min.css">
-    <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="/layouts/marketing/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="cybadroids homepage">
+  <title>cybadroid cybersecurity services</title>
+  <link rel="stylesheet" href="/css/pure/pure-min.css">
+  <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="/layouts/marketing/styles.css">
 
-    <link rel="stylesheet" type="text/css" href="stylebase.css">
-  
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
-    
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-  
+  <link rel="stylesheet" type="text/css" href="stylebase.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
 
-    
-  </head>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
 
+</head>
 
-  <body>
-
-
+<body>
 
   <div class="header">
-      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-          <a class="pure-menu-heading" href="">cybadroid security services</a>
-  
-          <ul class="pure-menu-list">
-              <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
-              <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <a class="pure-menu-heading" href="">cybadroid security services</a>
+
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+        <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
               <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li> -->
-          </ul>
-      </div>
+      </ul>
+    </div>
   </div>
   <p>
-    <a href="https://cybadroid.github.io" class="pure-button pure-button-primary">home</a>
-</p>
+    <a href="https://cybadroid.github.io" class="pure-button pure-button-primary">=</a>
+  </p>
 
-      
-      
   <div class="splash-container">
-      <div class="splash">
-          <h1 class="splash-head">cybadroid  </h1>
-          <H1 class="splash-head">cybersecurity</H1>
-          <p class="splash-subhead">training services
-        </p>
-        <img width="480" height="480" alt="logo"  src="https://cybadroid.github.io/cybadroid.png">
+    <div class="splash">
+      <h1 class="splash-head">cybadroid </h1>
+      <H1 class="splash-head">cybersecurity</H1>
+      <p class="splash-subhead">training services
+      </p>
 
+      <div id="container">
+        <h1>CYBER</H1>
+        <div id="flip">
 
-
-
+          <!-- two divs, one is another container later-->
+          <div>•<div>Network Security</div>
+          </div>
+          <div>
+            <div>Cryptography</div>
+          </div>
+          <div>
+            <div>Vulnerability Assessment</div>
+          </div>
+          <div>
+            <div>Incident Response</div>
+          </div>
+          <div>
+            <div>Threat Intelligence</div>
+          </div>
+          <div>
+            <div>Penetration Testing</div>
+          </div>
+          <div>
+            <div>Security Policies</div>
+          </div>
+          <div>
+            <div>Access Control</div>
+          </div>
+          <div>
+            <div>Data Protection</div>
+          </div>
+          <div>
+            <div>Cloud Security</div>
+          </div>
+        </div>
       </div>
+
+
+
+    </div>
   </div>
-
-  
-
-
-
-
-
-
-
-
-
 
   <div class="content-wrapper">
-      <div class="content">
-          <h2 class="content-head is-center">cyber Security Logistics</h2>
-  
+    <div class="content">
+      <h2 class="content-head is-center">cyber security training and logistics</h2>
 
+      <div class="pure-g">
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
 
+          <h3 class="content-subhead">
+            <i class="fa fa-rocket"></i>
+            Cybersecurity Auditing
+          </h3>
+          <p>
+            Cyber Audits
+            Cyber Training
+            Penetration Testing
+          </p>
 
-          <div class="pure-g">
-              <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-  
-                  <h3 class="content-subhead">
-                      <i class="fa fa-rocket"></i>
-                      Cybersecurity Auditing
-                  </h3>
-                  <p>
-Cyber Audits
-Cyber Training
-Penetration Testing
-</p>
-
-
-
-              </div>
-              <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                  <h3 class="content-subhead">
-                      <i class="fa fa-mobile"></i>
-                      SECURE
-                  </h3>
-                  <p>
-Today's landscape is Desktop and Mobile which requires security for both                   </p>
-              </div>
-              <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                  <h3 class="content-subhead">
-                      <i class="fa fa-th-large"></i>
-                      BATTLETESTED
-                  </h3>
-                  <p>
-Tested in the wild                  </p>
-              </div>
-              <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                  <h3 class="content-subhead">
-                      <i class="fa fa-check-square-o"></i>
-                      RECOVERY
-                  </h3>
-                  <p>
-Known recovery pipeline
-                  </p>
-              </div>
-          </div>
+        </div>
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+            <i class="fa fa-mobile"></i>
+            Always SECURE not just SECURE then
+          </h3>
+          <p>
+            Monitor your stuff and secure it all the time </p>
+        </div>
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+            <i class="fa fa-th-large"></i>
+            BATTLETESTED
+          </h3>
+          <p>
+            Tested in the wild </p>
+        </div>
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+            <i class="fa fa-check-square-o"></i>
+            RECOVERY
+          </h3>
+          <p>
+            Known recovery pipeline
+          </p>
+        </div>
       </div>
-  
-      <div class="ribbon l-box-lrg pure-g">
+    </div>
 
-          <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-  
-            <h2 class="content-head content-head-ribbon">Protect Your Data Now!</h2>
-  
-            
-            
-            
-            
+    <div class="ribbon l-box-lrg pure-g">
 
-            <p>
-                In today's digital age, cybersecurity is more important than ever. Ensure your personal and business data are secure by following best practices and staying informed about the latest threats. 
-                <strong>Take action now</strong> to protect your information from cyberattacks. Implement strong passwords, use two-factor authentication, and regularly update your software. 
-                Stay vigilant and educate yourself on potential risks to safeguard your digital life.
-            </p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
-              <defs>
-                <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#664444" />
-                  <stop offset="100%" stop-color="#662222" />
-                </linearGradient>
-              </defs>
-            
-              <rect width="100%" height="100%" fill="url(#bgGradient)" />
-            
-           
-            
-              <circle class="bubble1" cx="200" cy="640" r="20" />
-            
-              <circle class="bubble2" cx="280" cy="670" r="18" />
-              <circle class="bubble3" cx="240" cy="960" r="8" />
-                <circle class="bubble3" cx="320" cy="720" r="10" />
-                  <circle class="bubble3" cx="240" cy="1280" r="10" />
-              
-              <text class="text" x="50%" y="50%">sanitise rising threats</text>
-            
-            </svg>
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
 
+        <h2 class="content-head content-head-ribbon">Data Management</h2>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="background-color: #444;">
-                <text id="text" x="240" y="150" fill="white" font-size="96" text-anchor="middle">services</text>
-                <polygon id="triangle" points="240 180, 300 300, 180 300" fill="lime">
-                  <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.4 1; 0.4 0 0.4 1" keyTimes="0; 0.5; 1" values="0 -20; 0 20; 0 -20" />
-                </polygon>
-                <text id="text" x="240" y="360" fill="white" font-size="24" text-anchor="middle">cyber</text>
-              </svg>
+        <p>
+          In today's digital age, cybersecurity is more important than ever. Ensure your personal and business data are secure by following best practices and staying informed about the latest threats.
+          <strong>Take action now</strong> to protect your information from cyberattacks.
 
-              
+          Stay vigilant and get training and educate on potential risks to safeguard your digital business and lifestyle.
+        </p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+          <defs>
+            <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#664444" />
+              <stop offset="100%" stop-color="#662222" />
+            </linearGradient>
+          </defs>
 
-          </div>
+          <rect width="100%" height="100%" fill="url(#bgGradient)" />
+
+          <circle class="bubble1" cx="200" cy="640" r="20" />
+
+          <circle class="bubble2" cx="280" cy="670" r="18" />
+          <circle class="bubble3" cx="240" cy="960" r="8" />
+          <circle class="bubble3" cx="320" cy="720" r="10" />
+          <circle class="bubble3" cx="240" cy="1280" r="10" />
+
+          <text class="text" x="50%" y="50%">sanitise rising threats</text>
+
+        </svg>
+
       </div>
-  
-      <div class="content">
-          <h2 class="content-head is-center">Get in touch with us.</h2>
-  
-          <div class="pure-g">
-              <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                  <form class="pure-form pure-form-stacked">
-                      <fieldset>
-  
-                          <label for="name">Your Name</label>
-                          <input id="name" type="text" placeholder="Your Name">
-  
-  
-                          <label for="email">Your Email</label>
-                          <input id="email" type="email" placeholder="Your Email">
-  
-                          <label for="message">Your Message</label>
-                          <input id="message" type="message" placeholder="Your message">
-  
-                          <button type="submit" class="pure-button">Submit</button>
-                      </fieldset>
-                  </form>
-              </div>
-  
-              <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                  <h4>Contact Us</h4>
-                  <p>
-                 CONTACT DETAILS
-                 Phone
-                 Email
-                 Website
+    </div>
 
-                  </p>
-  
+    <div class="content">
+      <h2 class="content-head is-center">Get in touch with us.</h2>
 
+      <div class="pure-g">
+        <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+          <form class="pure-form pure-form-stacked">
+            <fieldset>
 
-              </div>
-          </div>
-  
+              <label for="name">Your Name</label>
+              <input id="name" type="text" placeholder="Your Name">
+
+              <label for="email">Your Email</label>
+              <input id="email" type="email" placeholder="Your Email">
+
+              <label for="message">Your Message</label>
+              <input id="message" type="message" placeholder="Your message">
+
+              <button type="submit" class="pure-button">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+          <h4>Contact Us</h4>
+          <p>
+            CONTACT DETAILS
+            Phone
+            Email
+            Website
+
+          </p>
+
+        </div>
       </div>
-  
-      <div class="footer l-box is-center">
-Footer links      
 
-# Privacy Policy
-# Website Disclaimer
-# Terms and Conditions
-# Terms Advertisers
-# Terms Contributors
+    </div>
 
+    <div class="footer l-box is-center">
+      Footer links
 
-</div>
-  
+      # Privacy Policy
+      # Website Disclaimer
+      # Terms and Conditions
+      # Terms Advertisers
+      # Terms Contributors
+
+    </div>
+
   </div>
-
-
-
-
-
-
-  
-
-
 
 </body>
 
-
-
+  
+        <img width="480" height="480" alt="logo" src="https://cybadroid.github.io/cybadroid.png">
+  
+  
 </html>
