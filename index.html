@@ -4,6 +4,75 @@
 <head>
   <style>
    
+   @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+    margin: 0px;
+    font-family: 'Roboto';
+    text-align: center;
+  background-color: black;
+  
+}
+
+#container {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 60px;
+    position: fixed;
+    width: 100%;
+    bottom: 45%;
+    display: block;
+}
+
+#flip {
+    height: 50px;
+    overflow: hidden;
+}
+
+#flip > div > div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+#flip div:first-child {
+    animation: show 5s linear infinite;
+}
+
+#flip div div {
+    background: #333;
+}
+#flip div:first-child div {
+    background: #bb0000;
+}
+#flip div:last-child div {
+    background: #dd0000;
+}
+
+@keyframes show {
+    0% {margin-top: -270px;}
+    5% {margin-top: -180px;}
+    33% {margin-top: -180px;}
+    38% {margin-top: -90px;}
+    66% {margin-top: -90px;}
+    71% {margin-top: 0px;}
+    99.99% {margin-top: 0px;}
+    100% {margin-top: -270px;}
+}
+
+p {
+    position: fixed;
+    width: 100%;
+    bottom: 32px;
+    font-size: 16px;
+    color: #999;
+    margin-top: 160px;
+}
+
 
     .bubble1 {
       animation: rise1 12s infinite;
@@ -184,6 +253,33 @@
 
         </svg>
 
+
+        <div id="container">
+          CYBER
+            <div id="flip">
+                <div><div>Network Security</div></div>
+                <div><div>Cryptography</div></div>
+                <div><div>Vulnerability Assessment</div></div>
+                <div><div>Incident Response</div></div>
+                <div><div>Threat Intelligence</div></div>
+                <div><div>Penetration Testing</div></div>
+                <div><div>Security Policies</div></div>
+                <div><div>Access Control</div></div>
+                <div><div>Data Protection</div></div>
+                <div><div>Security Audits</div></div>
+                <div><div>Compliance</div></div>
+                <div><div>Malware Analysis</div></div>
+                <div><div>Forensics</div></div>
+                <div><div>Intrusion Detection Systems</div></div>
+                <div><div>Application Security</div></div>
+                <div><div>Identity Management</div></div>
+                <div><div>Security Operations</div></div>
+                <div><div>Cyber Risk Management</div></div>
+                <div><div>Cloud Security</div></div>
+            </div>
+    SECURITY    </div>
+
+    
       </div>
     </div>
 
@@ -243,3 +339,28 @@
   
   
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
