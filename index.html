@@ -129,6 +129,64 @@ p {
       text-anchor: middle;
       dominant-baseline: middle;
     }
+
+
+    /* horizontal list */
+
+
+    .hnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      background-color: #dfdfdf;
+      padding: 10px 0;
+      filter: drop-shadow(0px 6px 5px #878787);
+    }
+
+    .hnav ul {
+      list-style-type: none;
+      /* Remove bullet points */
+      padding: 0.1em;
+      margin: 0;
+      text-align: center;
+    }
+
+    .hnav ul li {
+      display: inline;
+      /* Display list items inline */
+      margin: 0 0.6em;
+      /* Space between items */
+    }
+
+    .hnav ul li a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hnav ul li a:hover {
+      text-decoration: underline;
+    }
+    
+    .tmpcontent{
+      padding: 3em ;
+      
+    }
+    
+    
+    /* special or super hr */
+    
+    .s-hr {
+  border: none;
+  height: 0.1em;
+  background-color: #222222; 
+  margin: 8px 0;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+
   </style>
 
   <meta charset="utf-8">
@@ -279,7 +337,7 @@ p {
             </div>
     SECURITY    </div>
 
-    
+
       </div>
     </div>
 
@@ -320,18 +378,52 @@ p {
 
     </div>
 
-    <div class="footer l-box is-center">
-      Footer links
 
-      # Privacy Policy
-      # Website Disclaimer
-      # Terms and Conditions
-      # Terms Advertisers
-      # Terms Contributors
+
+
+
+
+
+
+
+    <div class="footer l-box is-center">
+    
+    
+      <div class="hnav">
+        <ul>
+          <li>
+            <p><a href="#">Logo</a></p>
+          </li>
+        </ul>
+            <hr class="s-hr">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Advertisers</a></li>
+          <li><a href="#">Contributors</a></li>
+
+        </ul>
+      </div>
+      
+
 
     </div>
 
+
+
+
+
+
+
+
+
+
+
   </div>
+
+
+
 
 </body>
 
