@@ -14,123 +14,6 @@ body {
   
 }
 
-#container {
-    color: #333;
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: bold;
-    padding-top: 60px;
-    position: fixed;
-    width: 100%;
-    bottom: 45%;
-    display: block;
-}
-
-#flip {
-    height: 50px;
-    overflow: hidden;
-}
-
-#flip > div > div {
-    color: #fff;
-    padding: 4px 12px;
-    height: 45px;
-    margin-bottom: 45px;
-    display: inline-block;
-}
-
-#flip div:first-child {
-    animation: show 5s linear infinite;
-}
-
-#flip div div {
-    background: #333;
-}
-#flip div:first-child div {
-    background: #bb0000;
-}
-#flip div:last-child div {
-    background: #dd0000;
-}
-
-@keyframes show {
-    0% {margin-top: -270px;}
-    5% {margin-top: -180px;}
-    33% {margin-top: -180px;}
-    38% {margin-top: -90px;}
-    66% {margin-top: -90px;}
-    71% {margin-top: 0px;}
-    99.99% {margin-top: 0px;}
-    100% {margin-top: -270px;}
-}
-
-p {
-    position: fixed;
-    width: 100%;
-    bottom: 32px;
-    font-size: 16px;
-    color: #999;
-    margin-top: 160px;
-}
-
-
-    .bubble1 {
-      animation: rise1 12s infinite;
-      transform-origin: center;
-      fill: rgba(255, 255, 255, 0.3);
-    }
-
-    @keyframes rise1 {
-      0% {
-        transform: translateY(0);
-      }
-
-      100% {
-        transform: translateY(-100%);
-      }
-    }
-
-    .bubble2 {
-      animation: rise2 12.3s infinite;
-      transform-origin: center;
-      fill: rgba(255, 255, 255, 0.6);
-    }
-
-    @keyframes rise2 {
-      0% {
-        transform: translateY(0);
-      }
-
-      100% {
-        transform: translateY(-100%);
-      }
-    }
-
-    .bubble3 {
-      animation: rise3 14.3s infinite;
-      transform-origin: center;
-      fill: rgba(255, 255, 255, 0.6);
-    }
-
-    @keyframes rise3 {
-      0% {
-        transform: translateY(0);
-      }
-
-      100% {
-        transform: translateY(-185%);
-      }
-    }
-
-    .text {
-      font-family: Arial, sans-serif;
-      font-size: 36px;
-      fill: white;
-      text-anchor: middle;
-      dominant-baseline: middle;
-    }
-
-
     /* horizontal list */
 
 
@@ -312,9 +195,6 @@ p {
         </svg>
 
 
-        <div id="container">
-          CYBER
-            <div id="flip">
                 <div><div>Network Security</div></div>
                 <div><div>Cryptography</div></div>
                 <div><div>Vulnerability Assessment</div></div>
@@ -334,8 +214,6 @@ p {
                 <div><div>Security Operations</div></div>
                 <div><div>Cyber Risk Management</div></div>
                 <div><div>Cloud Security</div></div>
-            </div>
-    SECURITY    </div>
 
 
       </div>
