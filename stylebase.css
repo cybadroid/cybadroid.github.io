@@ -85,8 +85,8 @@ body {
     color: #d1d1d1;
     font-size: 18px;
     background: linear-gradient(180deg,
-     rgba(45,45,45,1) 20%,
-      rgb(62, 54, 219) 20%,
+     rgba(45,45,45) 20%,
+      rgb(62, 54, 219) 40%,
        rgb(126, 197, 255) 60%);
 
 }
