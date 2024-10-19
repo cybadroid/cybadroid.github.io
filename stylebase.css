@@ -12,7 +12,7 @@
 body {
     line-height: 1.7em;
     color: #d1d1d1;
-    font-size: 16px;
+    font-size: 18px;
     background: linear-gradient(180deg,
      rgba(45,45,45,1) 40%,
       rgb(62, 54, 219) 20%,
@@ -27,7 +27,7 @@ h4,
 h5,
 h6,
 label {
-    color: #34495e;
+    color: #262a2e;
 }
 
 .pure-img-responsive {
