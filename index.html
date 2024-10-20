@@ -5,6 +5,45 @@
   <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
+    :root {
+      /* Color Variables */
+      --primary-color: #007bff;
+      --secondary-color: #6c757d;
+      --success-color: #28a745;
+      --danger-color: #dc3545;
+      --warning-color: #ffc107;
+      --info-color: #17a2b8;
+      --light-color: #f8f9fa;
+      --dark-color: #343a40;
+      --text-color: #333;
+
+      /* Font Variables */
+      --font-primary: 'Roboto', sans-serif;
+      --font-secondary: 'Open Sans', sans-serif;
+      --font-tertiary: 'Lato', sans-serif;
+
+      /* Font Size Variables */
+      --font-size-base: 16px;
+      --font-size-h1: 2.5rem;
+      --font-size-h2: 2rem;
+      --font-size-h3: 1.75rem;
+      --font-size-h4: 1.5rem;
+      --font-size-h5: 1.25rem;
+      --font-size-h6: 1rem;
+
+      /* Spacing Variables */
+      --spacing-small: 0.5rem;
+      --spacing-medium: 1rem;
+      --spacing-large: 1.5rem;
+      --spacing-xlarge: 2rem;
+
+      /* Border Radius Variables */
+      --border-radius-small: 0.2rem;
+      --border-radius-medium: 0.25rem;
+      --border-radius-large: 0.3rem;
+    }
+
+
     body {
       margin: 0px;
       font-family: 'Roboto';
@@ -13,6 +52,23 @@
 
 
     }
+
+
+    header {
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      padding: var(--spacing-medium) 0;
+    }
+
+
+    footer {
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      padding: var(--spacing-medium) 0;
+      text-align: center;
+    }
+
+
 
     article {
       padding: 20px;
@@ -28,11 +84,7 @@
       margin-top: 20px;
     }
 
-    footer {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 0.9em;
-    }
+
 
     .pull-quote {
       font-style: italic;
@@ -217,7 +269,7 @@
 
 <body>
 
-  <div class="header">
+  <header>
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
       <a class="pure-menu-heading" href="#">cybadroid training</a>
 
@@ -309,23 +361,23 @@
 
 
 
-    <!-- Article for Notes -->
-    <article>
-      <h2>Importance of Notes</h2>
-      <p>Notes can offer insights or important reminders related to the content discussed in the article.</p>
-      <aside class="note">
-        <h3>Note</h3>
-        <p>Remember to always fact-check your sources when writing articles.</p>
-      </aside>
-    </article>
-  
-  
-    <Article>
-      <title>Cyber Training</title>
-  
-      <content>Update your team with the latest threat intelligence
-      </content>
-    </Article>
+          <!-- Article for Notes -->
+          <article>
+            <h2>Importance of Notes</h2>
+            <p>Notes can offer insights or important reminders related to the content discussed in the article.</p>
+            <aside class="note">
+              <h3>Note</h3>
+              <p>Remember to always fact-check your sources when writing articles.</p>
+            </aside>
+          </article>
+
+
+          <Article>
+            <title>Cyber Training</title>
+
+            <content>Update your team with the latest threat intelligence
+            </content>
+          </Article>
 
 
 
@@ -517,41 +569,15 @@
 
 
 
-
-
-
-    
-
-
-  
-
   <footer>
-      <ul>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Disclaimer</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">&copy 2024 All Rights Reserved</a></li>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Disclaimer</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">&copy 2024 All Rights Reserved</a></li>
 
-      </ul>
-    </footer>
-
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </ul>
+  </footer>
 
 
 
@@ -559,9 +585,7 @@
 
 
 
-
-
-
+  </div>
 
 
 </body>
