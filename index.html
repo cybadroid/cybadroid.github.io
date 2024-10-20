@@ -287,12 +287,27 @@
       <article>
         <div>
           <h2>Welcome</h2>
-          <p>We are committed to maintaining the highest standards of cybersecurity training</p>
+          <p>At Cybadroid,
+            we are dedicated to delivering top-tier cybersecurity training
+            that equips individuals and organizations with the skills needed to safeguard their digital assets.
+            Our expert-led programs cover everything from foundational principles to advanced defense strategies,
+            focusing on real-world applications.
+            Whether you're a beginner or a seasoned professional,
+            Cybadroid provides tailored solutions to meet your cybersecurity training needs.
+          </p>
 
-          <p>
-            <strong>Do We Personally Offer Bug Bounties?</strong>
-            No, we are not involved in that part of the industry,
-            we encourage security researchers however to participate in Bug Bounty Programs.
+          <h3>How big is the attack space today?</h3>
+
+          <p>The MITRE ATT&CK® framework
+            is a comprehensive resource detailing adversary tactics,
+            techniques, and procedures, helping organizations improve threat detection, response,
+            and defense strategies against real-world cyber threats.
+
+            Ideal for threat intelligence, defense, and
+            red/blue teaming, ATT&CK is an essential tool in the cybersecurity landscape.
+          </p>
+
+          <p> https://attack.mitre.org/#
           </p>
 
           <h3>Cybersecurity Resources</h3>
@@ -329,132 +344,146 @@
 
 
       <!-- FORM Contact Us //-->
-       <article>
-      <detail>
-        <summary>CONTACT</summary>
+      <article>
+        <detail>
+          <summary>CONTACT</summary>
 
-        <p>CONTACT FORM</p>
+          <p>CONTACT FORM</p>
 
-        <div class="global_form_wrapper">
+          <div class="global_form_wrapper">
 
-          <form id="contactForm">
+            <form id="contactForm">
 
-            <p>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
-            </p>
+              <p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </p>
 
-            <div class="padding-large"></div>
+              <div class="padding-large"></div>
 
-            <p>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </p>
+              <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </p>
 
-            <div class="padding-large"></div>
+              <div class="padding-large"></div>
 
-            <p>
-              <label for="message">Message</label>
-              <textarea id="message" name="message" cols="50" rows="4" required></textarea>
-            </p>
+              <p>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" cols="50" rows="4" required></textarea>
+              </p>
 
-            <div class="padding-large"></div>
+              <div class="padding-large"></div>
 
-            <p>
+              <p>
 
-              <button type="button" id="submitBtn" onclick="validateAndSubmit()">Submit</button>
-            </p>
+                <button type="button" id="submitBtn" onclick="validateAndSubmit()">Submit</button>
+              </p>
 
-          </form>
+            </form>
 
-          <script>
-            function validateAndSubmit() {
-              var validationErrors = validateForm();
-              if (validationErrors.length > 0) {
-                openModal(validationErrors.join('<br>'));
-              } else {
-                submitForm();
+            <script>
+              function validateAndSubmit() {
+                var validationErrors = validateForm();
+                if (validationErrors.length > 0) {
+                  openModal(validationErrors.join('<br>'));
+                } else {
+                  submitForm();
+                }
               }
-            }
 
-            function submitForm() {
-              var name = sanitizeInput(document.getElementById('name').value);
-              var email = sanitizeInput(document.getElementById('email').value);
-              var message = sanitizeInput(document.getElementById('message').value);
-              var successMessage = 'Message Sent Successfully!\n\n';
-              successMessage += 'Thank you, ' + name + ', for reaching out to us.\n';
-              successMessage += 'We have received your message and will get back to you as soon as possible.\n\n';
-              successMessage += 'Details submitted:\n';
-              successMessage += 'Name: ' + name + '\n';
-              successMessage += 'Email: ' + email + ' (Confirmation email will be sent to this address)\n';
-              successMessage += 'Message: ' + message;
-              openModal(successMessage);
-              document.getElementById('submitBtn').disabled = true;
-              document.getElementById('contactForm').reset();
-            }
+              function submitForm() {
+                var name = sanitizeInput(document.getElementById('name').value);
+                var email = sanitizeInput(document.getElementById('email').value);
+                var message = sanitizeInput(document.getElementById('message').value);
+                var successMessage = 'Message Sent Successfully!\n\n';
+                successMessage += 'Thank you, ' + name + ', for reaching out to us.\n';
+                successMessage += 'We have received your message and will get back to you as soon as possible.\n\n';
+                successMessage += 'Details submitted:\n';
+                successMessage += 'Name: ' + name + '\n';
+                successMessage += 'Email: ' + email + ' (Confirmation email will be sent to this address)\n';
+                successMessage += 'Message: ' + message;
+                openModal(successMessage);
+                document.getElementById('submitBtn').disabled = true;
+                document.getElementById('contactForm').reset();
+              }
 
-            function validateForm() {
-              var name = document.getElementById('name').value;
-              var email = document.getElementById('email').value;
-              var message = document.getElementById('message').value;
-              name = name.trim();
-              email = email.trim();
-              message = message.trim();
-              var errors = [];
-              if (name === "") {
-                errors.push('Name is required');
+              function validateForm() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
+                name = name.trim();
+                email = email.trim();
+                message = message.trim();
+                var errors = [];
+                if (name === "") {
+                  errors.push('Name is required');
+                }
+                if (email === "") {
+                  errors.push('Email is required');
+                }
+                if (message === "") {
+                  errors.push('Message is required');
+                }
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                  errors.push('Please enter a valid email address');
+                }
+                if (name.length < 4) {
+                  errors.push('Name should be at least 4 characters');
+                }
+                if (message.length < 50) {
+                  errors.push('Message should be at least 50 characters');
+                }
+                return errors;
               }
-              if (email === "") {
-                errors.push('Email is required');
-              }
-              if (message === "") {
-                errors.push('Message is required');
-              }
-              var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-              if (!emailRegex.test(email)) {
-                errors.push('Please enter a valid email address');
-              }
-              if (name.length < 4) {
-                errors.push('Name should be at least 4 characters');
-              }
-              if (message.length < 50) {
-                errors.push('Message should be at least 50 characters');
-              }
-              return errors;
-            }
 
-            function openModal(text) {
-              var modal = document.getElementById('myModal');
-              var modalText = document.getElementById('modalText');
-              modalText.innerHTML = '';
-              var lines = text.split('\n\n');
-              lines.forEach(function (line) {
-                var paragraph = document.createElement('p');
-                paragraph.innerHTML = line;
-                modalText.appendChild(paragraph);
-              });
-              modal.style.display = 'block';
-            }
+              function openModal(text) {
+                var modal = document.getElementById('myModal');
+                var modalText = document.getElementById('modalText');
+                modalText.innerHTML = '';
+                var lines = text.split('\n\n');
+                lines.forEach(function (line) {
+                  var paragraph = document.createElement('p');
+                  paragraph.innerHTML = line;
+                  modalText.appendChild(paragraph);
+                });
+                modal.style.display = 'block';
+              }
 
-            function closeModal() {
-              var modal = document.getElementById('myModal');
-              modal.style.display = 'none';
-            }
+              function closeModal() {
+                var modal = document.getElementById('myModal');
+                modal.style.display = 'none';
+              }
 
-            function sanitizeInput(input) {
-              return input
-                .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;')
-                .replace(/&/g, '&amp;')
-                .replace(/"/g, '&quot;')
-                .replace(/'/g, '&#39;');
-            }
-          </script>
+              function sanitizeInput(input) {
+                return input
+                  .replace(/</g, '&lt;')
+                  .replace(/>/g, '&gt;')
+                  .replace(/&/g, '&amp;')
+                  .replace(/"/g, '&quot;')
+                  .replace(/'/g, '&#39;');
+              }
+            </script>
 
-        </div>
-      </detail>
-    </article>
+          </div>
+        </detail>
+      </article>
       <!-- FORM Contact Us //-->
+
+
+      <detail>
+        <summary>Bug Bounties</summary>
+
+        <p>
+          <strong>Do We Personally Offer Bug Bounties?</strong>
+          No, we are not involved in that part of the industry,
+          we encourage security researchers however to participate in Bug Bounty Programs.
+          Bug bounties are important to the industry and ongoing improved security of the current landscape.
+
+        </p>
+
+      </detail>
 
 
 
