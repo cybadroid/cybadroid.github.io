@@ -109,6 +109,22 @@
       transform: translate(-50%, -50%) scale(3);
     }
     
+
+    .news-columns {
+  display: flex;
+  justify-content: space-between; /* Equal spacing between columns */
+}
+
+.column {
+  flex: 1; /* Ensures all columns take equal width */
+  margin: 0 10px; /* Optional: Adds some space around the columns */
+  background-color: lightgray; /* Optional: For visual clarity */
+  padding: 20px;
+  text-align: center; /* Optional: Center the text */
+}
+
+
+
     
     </style>
 
@@ -221,26 +237,38 @@
           </script>
 
 
-        </div>
-        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-          <h3 class="content-subhead">
-            <i class="fa fa-network"></i>
-            Training 
-          </h3>
-          <p>
-            Multi modal and varied</p>
-        </div>
 
-        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-          <h3 class="content-subhead">
-            <i class="fa fa-check-square-o"></i>
-            INCIDENT READY
-          </h3>
-          <p>
-            Prepared for the worst with a best principles strategy and plan
-    
-          </p>
-        </div>
+<div class="news-columns">
+  <div class="column">
+
+  </div>
+  <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+    <h3 class="content-subhead">
+      <i class="fa fa-network"></i>
+      Training 
+    </h3>
+    <p>
+      Multi modal and varied</p>
+  </div>  </div>
+  <div class="column">
+    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+      <h3 class="content-subhead">
+        <i class="fa fa-check-square-o"></i>
+        INCIDENT READY
+      </h3>
+      <p>
+        Prepared for the worst with a best principles strategy and plan
+
+      </p>
+    </div>  </div>
+</div>
+
+
+
+
+
+
+       
       </div>
     </div>
 
@@ -256,7 +284,7 @@
     </div>
 
     <div class="content">
-      <h2 class="content-head is-center">touch base</h2>
+      <h2 class="content-head is-center">Contact US</h2>
 
  
 
@@ -264,7 +292,7 @@
 
       <!-- FORM Contact Us //-->
 
-        <p>CONTACT US</p>
+        <p>CONTACT FORM</p>
 
         <div class="global_form_wrapper">
 
