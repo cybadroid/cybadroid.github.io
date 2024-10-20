@@ -3,15 +3,13 @@
 
 <head>
   <style>
-
-
     @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
     * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
 
     :root {
@@ -85,16 +83,16 @@
       margin: 0px;
       font-family: 'Roboto';
       text-align: center;
-      background-color: black;
+      background-color: var(--bg-color);
       display: flex;
-            flex-direction: column;
+      flex-direction: column;
 
 
     }
 
     main {
-            flex: 1;
-        }
+      flex: 1;
+    }
 
 
     div {
@@ -289,268 +287,268 @@
   </header>
 
 
-<main>
+  <main>
 
-  <h2 class="content-head is-center">cyber security training </h2>
+    <h2 class="content-head is-center">cyber security training </h2>
 
 
-  <div class="hero-container">
-    <div class="text-box">
+    <div class="hero-container">
+      <div class="text-box">
 
-      <p class="hero-text">Network Security</p>
-      <p class="hero-text">Cryptography</p>
-      <p class="hero-text">Vulnerability Assessment</p>
-      <p class="hero-text">Incident Response</p>
-      <p class="hero-text">Threat Intelligence</p>
-      <p class="hero-text">Penetration Testing</p>
-      <p class="hero-text">Security Policies</p>
-      <p class="hero-text">Access Control</p>
-      <p class="hero-text">Data Protection</p>
-      <p class="hero-text">Security Audits</p>
-      <p class="hero-text">Compliance</p>
-      <p class="hero-text">Malware Analysis</p>
-      <p class="hero-text">Forensics</p>
-      <p class="hero-text">Intrusion Detection Systems</p>
-      <p class="hero-text">Application Security</p>
-      <p class="hero-text">Identity Management</p>
-      <p class="hero-text">Security Operations</p>
-      <p class="hero-text">Cyber Risk Management</p>
-      <p class="hero-text">Cloud Security</p>
+        <p class="hero-text">Network Security</p>
+        <p class="hero-text">Cryptography</p>
+        <p class="hero-text">Vulnerability Assessment</p>
+        <p class="hero-text">Incident Response</p>
+        <p class="hero-text">Threat Intelligence</p>
+        <p class="hero-text">Penetration Testing</p>
+        <p class="hero-text">Security Policies</p>
+        <p class="hero-text">Access Control</p>
+        <p class="hero-text">Data Protection</p>
+        <p class="hero-text">Security Audits</p>
+        <p class="hero-text">Compliance</p>
+        <p class="hero-text">Malware Analysis</p>
+        <p class="hero-text">Forensics</p>
+        <p class="hero-text">Intrusion Detection Systems</p>
+        <p class="hero-text">Application Security</p>
+        <p class="hero-text">Identity Management</p>
+        <p class="hero-text">Security Operations</p>
+        <p class="hero-text">Cyber Risk Management</p>
+        <p class="hero-text">Cloud Security</p>
 
+      </div>
     </div>
-  </div>
 
-  <script>
-    const texts = document.querySelectorAll('.hero-text');
-    let currentIndex = 0;
-    const delay = 1000; // display time
-    const fadeTime = 500;
+    <script>
+      const texts = document.querySelectorAll('.hero-text');
+      let currentIndex = 0;
+      const delay = 1000; // display time
+      const fadeTime = 500;
 
-    function showText(index) {
-      texts.forEach((text, i) => {
-        text.classList.remove('show');
-        if (i === index) {
-          text.classList.add('show');
-        }
-      });
-    }
+      function showText(index) {
+        texts.forEach((text, i) => {
+          text.classList.remove('show');
+          if (i === index) {
+            text.classList.add('show');
+          }
+        });
+      }
 
-    function startFadeLoop() {
-      setInterval(() => {
-        currentIndex = (currentIndex + 1) % texts.length;
-        showText(currentIndex);
-      }, delay + (2 * fadeTime));
-    }
-    startFadeLoop();
-  </script>
-
-
-
-  <article>
-    <div>
-      <h2>Welcome</h2>
-      <p>At Cybadroid,
-        we are dedicated to delivering top-tier cybersecurity training
-        that equips individuals and organizations with the skills needed to safeguard their digital assets.
-        Our expert-led programs cover everything from foundational principles to advanced defense strategies,
-        focusing on real-world applications.
-        Whether you're a beginner or a seasoned professional,
-        Cybadroid provides tailored solutions to meet your cybersecurity training needs.
-      </p>
-
-      <h3>How big is the attack vector space today? It's Massive.</h3>
-
-      <p>
-        MITRE ATT&CK® is an amazing tool that breaks down how cyber attackers operate.
-        It helps everyone from beginners to experts understand
-        the tricks hackers use and shows how to stop them.
-
-        Ideal for threat intelligence, defense, and
-        red/blue teaming, ATT&CK is an essential tool in the cybersecurity landscape.
-      </p>
-
-      <p> <a href="#">https://attack.mitre.org/</a>
-      </p>
-
-
-  </article>
+      function startFadeLoop() {
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % texts.length;
+          showText(currentIndex);
+        }, delay + (2 * fadeTime));
+      }
+      startFadeLoop();
+    </script>
 
 
 
-  <Article>
-    <content>Update your team with the latest threat intelligence
-    </content>
-  </Article>
+    <article>
+      <div>
+        <h2>Welcome</h2>
+        <p>At Cybadroid,
+          we are dedicated to delivering top-tier cybersecurity training
+          that equips individuals and organizations with the skills needed to safeguard their digital assets.
+          Our expert-led programs cover everything from foundational principles to advanced defense strategies,
+          focusing on real-world applications.
+          Whether you're a beginner or a seasoned professional,
+          Cybadroid provides tailored solutions to meet your cybersecurity training needs.
+        </p>
 
-  <Article>
-    <content>Prepare for the worst outcomes and situations calmly so you are not taken by surprise
-    </content>
-  </Article>
-
-  <!-- Article for Notes -->
-  <article>
-    <h2>Importance of Notes</h2>
-    <p>Notes can offer insights or important reminders related to the content discussed in the article.</p>
-    <aside class="note">
-      <h3>Note</h3>
-      <p>Remember to always fact-check your sources when writing articles.</p>
-    </aside>
-  </article>
-
-
-
-  <!-- FORM Contact Us //-->
-
-  <details>
-    <summary>CONTACT US</summary>
-
-    <div class="global_form_wrapper">
-
-      <form id="contactForm">
+        <h3>How big is the attack vector space today? It's Massive.</h3>
 
         <p>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          MITRE ATT&CK® is an amazing tool that breaks down how cyber attackers operate.
+          It helps everyone from beginners to experts understand
+          the tricks hackers use and shows how to stop them.
+
+          Ideal for threat intelligence, defense, and
+          red/blue teaming, ATT&CK is an essential tool in the cybersecurity landscape.
+        </p>
+
+        <p> <a href="#">https://attack.mitre.org/</a>
         </p>
 
 
-        <p>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </p>
+    </article>
 
 
 
-        <p>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" cols="50" rows="4" required></textarea>
-        </p>
+    <Article>
+      <content>Update your team with the latest threat intelligence
+      </content>
+    </Article>
+
+    <Article>
+      <content>Prepare for the worst outcomes and situations calmly so you are not taken by surprise
+      </content>
+    </Article>
+
+    <!-- Article for Notes -->
+    <article>
+      <h2>Importance of Notes</h2>
+      <p>Notes can offer insights or important reminders related to the content discussed in the article.</p>
+      <aside class="note">
+        <h3>Note</h3>
+        <p>Remember to always fact-check your sources when writing articles.</p>
+      </aside>
+    </article>
 
 
-        <p>
 
-          <button type="button" id="submitBtn" onclick="validateAndSubmit()">Submit</button>
-        </p>
+    <!-- FORM Contact Us //-->
 
-      </form>
+    <details>
+      <summary>CONTACT US</summary>
 
-      <!-- Modal -->
-      <div id="myModal">
-        <div>
-          <p id="modalText"></p>
-          <!-- <button  onclick="closeModal()">OK</button> -->
+      <div class="global_form_wrapper">
+
+        <form id="contactForm">
+
+          <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </p>
+
+
+          <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+
+
+
+          <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" cols="50" rows="4" required></textarea>
+          </p>
+
+
+          <p>
+
+            <button type="button" id="submitBtn" onclick="validateAndSubmit()">Submit</button>
+          </p>
+
+        </form>
+
+        <!-- Modal -->
+        <div id="myModal">
+          <div>
+            <p id="modalText"></p>
+            <!-- <button  onclick="closeModal()">OK</button> -->
+          </div>
         </div>
+
+        <script>
+          function validateAndSubmit() {
+            var validationErrors = validateForm();
+            if (validationErrors.length > 0) {
+              openModal(validationErrors.join('<br>'));
+            } else {
+              submitForm();
+            }
+          }
+
+          function submitForm() {
+            var name = sanitizeInput(document.getElementById('name').value);
+            var email = sanitizeInput(document.getElementById('email').value);
+            var message = sanitizeInput(document.getElementById('message').value);
+            var successMessage = 'Message Sent Successfully!\n\n';
+            successMessage += 'Thank you, ' + name + ', for reaching out to us.\n';
+            successMessage += 'We have received your message and will get back to you as soon as possible.\n\n';
+            successMessage += 'Details submitted:\n';
+            successMessage += 'Name: ' + name + '\n';
+            successMessage += 'Email: ' + email + ' (Confirmation email will be sent to this address)\n';
+            successMessage += 'Message: ' + message;
+            openModal(successMessage);
+            document.getElementById('submitBtn').disabled = true;
+            document.getElementById('contactForm').reset();
+          }
+
+          function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            name = name.trim();
+            email = email.trim();
+            message = message.trim();
+
+            var errors = [];
+            if (name === "") {
+              errors.push('Name is required');
+            }
+            if (email === "") {
+              errors.push('Email is required');
+            }
+            if (message === "") {
+              errors.push('Message is required');
+            }
+
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+              errors.push('Please enter a valid email address');
+            }
+
+            if (name.length < 4) {
+              errors.push('Name should be at least 4 characters');
+            }
+            if (message.length < 50) {
+              errors.push('Message should be at least 50 characters');
+            }
+            return errors;
+          }
+
+          function openModal(text) {
+            var modal = document.getElementById('myModal');
+            var modalText = document.getElementById('modalText');
+            modalText.innerHTML = '';
+            var lines = text.split('\n\n');
+            lines.forEach(function (line) {
+              var paragraph = document.createElement('p');
+              paragraph.innerHTML = line;
+              modalText.appendChild(paragraph);
+            });
+            modal.style.display = 'block';
+          }
+
+          function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+          }
+
+          function sanitizeInput(input) {
+            return input
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/&/g, '&amp;')
+              .replace(/"/g, '&quot;')
+              .replace(/'/g, '&#39;');
+          }
+        </script>
+
       </div>
 
-      <script>
-        function validateAndSubmit() {
-          var validationErrors = validateForm();
-          if (validationErrors.length > 0) {
-            openModal(validationErrors.join('<br>'));
-          } else {
-            submitForm();
-          }
-        }
+    </details>
 
-        function submitForm() {
-          var name = sanitizeInput(document.getElementById('name').value);
-          var email = sanitizeInput(document.getElementById('email').value);
-          var message = sanitizeInput(document.getElementById('message').value);
-          var successMessage = 'Message Sent Successfully!\n\n';
-          successMessage += 'Thank you, ' + name + ', for reaching out to us.\n';
-          successMessage += 'We have received your message and will get back to you as soon as possible.\n\n';
-          successMessage += 'Details submitted:\n';
-          successMessage += 'Name: ' + name + '\n';
-          successMessage += 'Email: ' + email + ' (Confirmation email will be sent to this address)\n';
-          successMessage += 'Message: ' + message;
-          openModal(successMessage);
-          document.getElementById('submitBtn').disabled = true;
-          document.getElementById('contactForm').reset();
-        }
-
-        function validateForm() {
-          var name = document.getElementById('name').value;
-          var email = document.getElementById('email').value;
-          var message = document.getElementById('message').value;
-
-          name = name.trim();
-          email = email.trim();
-          message = message.trim();
-
-          var errors = [];
-          if (name === "") {
-            errors.push('Name is required');
-          }
-          if (email === "") {
-            errors.push('Email is required');
-          }
-          if (message === "") {
-            errors.push('Message is required');
-          }
-
-          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (!emailRegex.test(email)) {
-            errors.push('Please enter a valid email address');
-          }
-
-          if (name.length < 4) {
-            errors.push('Name should be at least 4 characters');
-          }
-          if (message.length < 50) {
-            errors.push('Message should be at least 50 characters');
-          }
-          return errors;
-        }
-
-        function openModal(text) {
-          var modal = document.getElementById('myModal');
-          var modalText = document.getElementById('modalText');
-          modalText.innerHTML = '';
-          var lines = text.split('\n\n');
-          lines.forEach(function (line) {
-            var paragraph = document.createElement('p');
-            paragraph.innerHTML = line;
-            modalText.appendChild(paragraph);
-          });
-          modal.style.display = 'block';
-        }
-
-        function closeModal() {
-          var modal = document.getElementById('myModal');
-          modal.style.display = 'none';
-        }
-
-        function sanitizeInput(input) {
-          return input
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/&/g, '&amp;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#39;');
-        }
-      </script>
-
-    </div>
-
-  </details>
-
-  <!-- FORM Contact Us //-->
+    <!-- FORM Contact Us //-->
 
 
-  <detail>
-    <summary>Bug Bounties</summary>
+    <detail>
+      <summary>Bug Bounties</summary>
 
-    <p>
-      <strong>Do We Personally Offer Bug Bounties?</strong>
-      No, we are not involved in that part of the industry,
-      we encourage security researchers however to participate in Bug Bounty Programs.
-      Bug bounties are important to the industry and ongoing improved security of the current landscape.
+      <p>
+        <strong>Do We Personally Offer Bug Bounties?</strong>
+        No, we are not involved in that part of the industry,
+        we encourage security researchers however to participate in Bug Bounty Programs.
+        Bug bounties are important to the industry and ongoing improved security of the current landscape.
 
-    </p>
+      </p>
 
-  </detail>
+    </detail>
 
-</main>
+  </main>
 
 
   <footer>
