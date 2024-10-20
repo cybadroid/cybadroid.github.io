@@ -108,25 +108,26 @@
       opacity: 1;
       transform: translate(-50%, -50%) scale(3);
     }
-    
+
 
     .news-columns {
-  display: flex;
-  justify-content: space-between; /* Equal spacing between columns */
-}
+      display: flex;
+      justify-content: space-between;
+      /* Equal spacing between columns */
+    }
 
-.column {
-  flex: 1; /* Ensures all columns take equal width */
-  margin: 0 10px; /* Optional: Adds some space around the columns */
-  background-color: lightgray; /* Optional: For visual clarity */
-  padding: 20px;
-  text-align: center; /* Optional: Center the text */
-}
-
-
-
-    
-    </style>
+    .column {
+      flex: 1;
+      /* Ensures all columns take equal width */
+      margin: 0 10px;
+      /* Optional: Adds some space around the columns */
+      background-color: #fffff;
+      /* Optional: For visual clarity */
+      padding: 20px;
+      text-align: center;
+      /* Optional: Center the text */
+    }
+  </style>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -211,13 +212,13 @@
 
             </div>
           </div>
-        
+
           <script>
             const texts = document.querySelectorAll('.hero-text');
             let currentIndex = 0;
             const delay = 1000; // display time
             const fadeTime = 500;
-        
+
             function showText(index) {
               texts.forEach((text, i) => {
                 text.classList.remove('show');
@@ -226,7 +227,7 @@
                 }
               });
             }
-        
+
             function startFadeLoop() {
               setInterval(() => {
                 currentIndex = (currentIndex + 1) % texts.length;
@@ -238,37 +239,39 @@
 
 
 
-<div class="news-columns">
-  <div class="column">
+          <div class="news-columns">
+            <div class="column">
 
-  </div>
-  <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-    <h3 class="content-subhead">
-      <i class="fa fa-network"></i>
-      Training 
-    </h3>
-    <p>
-      Multi modal and varied</p>
-  </div>  </div>
-  <div class="column">
-    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-      <h3 class="content-subhead">
-        <i class="fa fa-check-square-o"></i>
-        INCIDENT READY
-      </h3>
-      <p>
-        Prepared for the worst with a best principles strategy and plan
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+              <h3 class="content-subhead">
+                <i class="fa fa-network"></i>
+                Training
+              </h3>
+              <p>
+                Multi modal and varied</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+              <h3 class="content-subhead">
+                <i class="fa fa-check-square-o"></i>
+                INCIDENT READY
+              </h3>
+              <p>
+                Prepared for the worst with a best principles strategy and plan
 
-      </p>
-    </div>  </div>
-</div>
-
-
-
-
+              </p>
+            </div>
+          </div>
+        </div>
 
 
-       
+
+
+
+
+
       </div>
     </div>
 
@@ -277,8 +280,8 @@
       <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
 
         <h2 class="content-head content-head-ribbon">Digital Security</h2>
-       
-    Priority 
+
+        Priority
 
       </div>
     </div>
@@ -286,162 +289,162 @@
     <div class="content">
       <h2 class="content-head is-center">Contact US</h2>
 
- 
+
 
 
 
       <!-- FORM Contact Us //-->
 
-        <p>CONTACT FORM</p>
+      <p>CONTACT FORM</p>
 
-        <div class="global_form_wrapper">
+      <div class="global_form_wrapper">
 
-            <form id="contactForm">
+        <form id="contactForm">
 
-                <p>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </p>
+          <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </p>
 
-                <div class="padding-large"></div>
+          <div class="padding-large"></div>
 
-                <p>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </p>
 
-                <div class="padding-large"></div>
-
-
-                <p>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" cols="50" rows="4" required></textarea>
-                </p>
-
-                <div class="padding-large"></div>
-
-                <p>
-
-                    <button type="button" id="submitBtn" onclick="validateAndSubmit()">Submit</button>
-                </p>
-
-            </form>
+          <div class="padding-large"></div>
 
 
-            <script>
-                function validateAndSubmit() {
-                    var validationErrors = validateForm();
-                    if (validationErrors.length > 0) {
-                        openModal(validationErrors.join('<br>'));
-                    } else {
-                        submitForm();
-                    }
-                }
+          <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" cols="50" rows="4" required></textarea>
+          </p>
 
-                function submitForm() {
-                    var name = sanitizeInput(document.getElementById('name').value);
-                    var email = sanitizeInput(document.getElementById('email').value);
-                    var message = sanitizeInput(document.getElementById('message').value);
-                    var successMessage = 'Message Sent Successfully!\n\n';
-                    successMessage += 'Thank you, ' + name + ', for reaching out to us.\n';
-                    successMessage += 'We have received your message and will get back to you as soon as possible.\n\n';
-                    successMessage += 'Details submitted:\n';
-                    successMessage += 'Name: ' + name + '\n';
-                    successMessage += 'Email: ' + email + ' (Confirmation email will be sent to this address)\n';
-                    successMessage += 'Message: ' + message;
-                    openModal(successMessage);
-                    document.getElementById('submitBtn').disabled = true;
-                    document.getElementById('contactForm').reset();
-                }
+          <div class="padding-large"></div>
 
-                function validateForm() {
-                    var name = document.getElementById('name').value;
-                    var email = document.getElementById('email').value;
-                    var message = document.getElementById('message').value;
+          <p>
 
-                    name = name.trim();
-                    email = email.trim();
-                    message = message.trim();
+            <button type="button" id="submitBtn" onclick="validateAndSubmit()">Submit</button>
+          </p>
 
-                    var errors = [];
-                    if (name === "") {
-                        errors.push('Name is required');
-                    }
-                    if (email === "") {
-                        errors.push('Email is required');
-                    }
-                    if (message === "") {
-                        errors.push('Message is required');
-                    }
-
-                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!emailRegex.test(email)) {
-                        errors.push('Please enter a valid email address');
-                    }
-
-                    if (name.length < 4) {
-                        errors.push('Name should be at least 4 characters');
-                    }
-                    if (message.length < 50) {
-                        errors.push('Message should be at least 50 characters');
-                    }
-                    return errors;
-                }
-
-                function openModal(text) {
-                    var modal = document.getElementById('myModal');
-                    var modalText = document.getElementById('modalText');
-                    modalText.innerHTML = '';
-                    var lines = text.split('\n\n');
-                    lines.forEach(function (line) {
-                        var paragraph = document.createElement('p');
-                        paragraph.innerHTML = line;
-                        modalText.appendChild(paragraph);
-                    });
-                    modal.style.display = 'block';
-                }
-
-                function closeModal() {
-                    var modal = document.getElementById('myModal');
-                    modal.style.display = 'none';
-                }
-
-                function sanitizeInput(input) {
-                    return input
-                        .replace(/</g, '&lt;')
-                        .replace(/>/g, '&gt;')
-                        .replace(/&/g, '&amp;')
-                        .replace(/"/g, '&quot;')
-                        .replace(/'/g, '&#39;');
-                }
-            </script>
-
-        </div>
+        </form>
 
 
-    <!-- FORM Contact Us //-->
+        <script>
+          function validateAndSubmit() {
+            var validationErrors = validateForm();
+            if (validationErrors.length > 0) {
+              openModal(validationErrors.join('<br>'));
+            } else {
+              submitForm();
+            }
+          }
 
+          function submitForm() {
+            var name = sanitizeInput(document.getElementById('name').value);
+            var email = sanitizeInput(document.getElementById('email').value);
+            var message = sanitizeInput(document.getElementById('message').value);
+            var successMessage = 'Message Sent Successfully!\n\n';
+            successMessage += 'Thank you, ' + name + ', for reaching out to us.\n';
+            successMessage += 'We have received your message and will get back to you as soon as possible.\n\n';
+            successMessage += 'Details submitted:\n';
+            successMessage += 'Name: ' + name + '\n';
+            successMessage += 'Email: ' + email + ' (Confirmation email will be sent to this address)\n';
+            successMessage += 'Message: ' + message;
+            openModal(successMessage);
+            document.getElementById('submitBtn').disabled = true;
+            document.getElementById('contactForm').reset();
+          }
 
-      
+          function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            name = name.trim();
+            email = email.trim();
+            message = message.trim();
+
+            var errors = [];
+            if (name === "") {
+              errors.push('Name is required');
+            }
+            if (email === "") {
+              errors.push('Email is required');
+            }
+            if (message === "") {
+              errors.push('Message is required');
+            }
+
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+              errors.push('Please enter a valid email address');
+            }
+
+            if (name.length < 4) {
+              errors.push('Name should be at least 4 characters');
+            }
+            if (message.length < 50) {
+              errors.push('Message should be at least 50 characters');
+            }
+            return errors;
+          }
+
+          function openModal(text) {
+            var modal = document.getElementById('myModal');
+            var modalText = document.getElementById('modalText');
+            modalText.innerHTML = '';
+            var lines = text.split('\n\n');
+            lines.forEach(function (line) {
+              var paragraph = document.createElement('p');
+              paragraph.innerHTML = line;
+              modalText.appendChild(paragraph);
+            });
+            modal.style.display = 'block';
+          }
+
+          function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+          }
+
+          function sanitizeInput(input) {
+            return input
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/&/g, '&amp;')
+              .replace(/"/g, '&quot;')
+              .replace(/'/g, '&#39;');
+          }
+        </script>
+
       </div>
 
-    </div>
 
-
-    <div class="footer l-box is-center">
-      <div class="hnav">
-        <ul>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Disclaimer</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">&copy 2024 All Rights Reserved</a></li>
-
-        </ul>
-      </div>
+      <!-- FORM Contact Us //-->
 
 
 
     </div>
+
+  </div>
+
+
+  <div class="footer l-box is-center">
+    <div class="hnav">
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">&copy 2024 All Rights Reserved</a></li>
+
+      </ul>
+    </div>
+
+
+
+  </div>
 
 
 
