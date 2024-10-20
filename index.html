@@ -6,6 +6,20 @@
     @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
     :root {
+
+     /* neumorphism : master style*/
+      --nm: 4px 4px 8px 0 rgba(0, 0, 0, 0.2),
+        -4px -4px 8px 0 rgba(255, 255, 255, 1);
+      --nm-inset: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.2),
+        inset -2px -2px 4px 0 rgba(255, 255, 255, 0.8);
+
+      --border-radius: 8px;
+      --padding: 16px;
+      --bg-color: #efefef;
+      --bg-btn-color: #eeeeee;
+
+
+
       /* Color Variables */
       --primary-color: #007bff;
       --secondary-color: #6c757d;
@@ -39,12 +53,40 @@
       --border-radius-large: 0.3rem;
     }
 
+    button:hover {
+      box-shadow: var(--nm-inset);
+    }
+
+    button {
+      cursor: pointer;
+      color: #3b3b3b;
+
+      font-size: 1em;
+      font-family: 'Poppins', sans-serif;
+      padding: var(--padding);
+      border: none;
+      border-radius: var(--border-radius);
+      background-color: var(--bg-btn-color);
+      box-shadow: var(--nm);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+
     body {
       margin: 0px;
       font-family: 'Roboto';
       text-align: center;
       background-color: black;
     }
+
+    div {
+      padding: var(--padding);
+      border: none;
+      border-radius: var(--border-radius);
+      background-color: var(--bg-color);
+      box-shadow: var(--nm);
+    }
+
 
     header {
       position: relative;
