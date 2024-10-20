@@ -47,6 +47,8 @@
     }
 
     header {
+      position: relative;
+      z-index: 9999;
       background-color: var(--dark-color);
       color: var(--light-color);
       padding: var(--spacing-medium) 0;
@@ -167,17 +169,6 @@
       box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.5);
     }
 
-    .spesh-container {
-      /* background: #1f8dd6; */
-      z-index: 1;
-      overflow: hidden;
-      /* The following styles are required for the "scroll-over" effect */
-      width: 100%;
-      height: 50%;
-      top: 0;
-      left: 0;
-      position: fixed !important;
-    }
 
     .hero-container {
       background: linear-gradient(180deg, #000000, #343463, #444499, #474747);
@@ -198,7 +189,7 @@
     }
 
     .hero-text {
-      padding: 0.5em;
+      padding: 0.1em;
       color: white;
       /* background-color: black; */
       font-size: 1em;
