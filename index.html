@@ -60,23 +60,74 @@
       --border-radius-large: 0.3rem;
     }
 
-    button:hover {
-      box-shadow: var(--nm-inset);
-    }
+/* General Link Styles */
+a {
+    color: #007BFF; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
 
-    button {
-      cursor: pointer;
-      color: #3b3b3b;
+a:hover, a:focus {
+    color: #0056b3; /* Darker shade on hover/focus */
+    text-decoration: underline;
+}
 
-      font-size: 1em;
-      font-family: 'Poppins', sans-serif;
-      padding: var(--padding);
-      border: none;
-      border-radius: var(--border-radius);
-      background-color: var(--bg-btn-color);
-      box-shadow: var(--nm);
-      transition: box-shadow 0.3s ease-in-out;
-    }
+a:active {
+    color: #003d80; /* Even darker shade when active (clicked) */
+}
+
+/* General Button Styles */
+button,
+input[type="button"],
+input[type="submit"],
+.input-button {
+    background-color: #007BFF; /* Default button background color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.input-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+.input-button:active {
+    background-color: #003d80; /* Even darker background when active */
+    transform: scale(0.95); /* Slightly smaller on click */
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+.input-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add a custom focus outline */
+}
+
+/* Disabled State */
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+.input-button:disabled {
+    background-color: #CCCCCC; /* Gray background for disabled state */
+    cursor: not-allowed;
+    opacity: 0.6; /* Reduce opacity */
+}
 
 
     body {
