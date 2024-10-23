@@ -60,75 +60,87 @@
       --border-radius-large: 0.3rem;
     }
 
-/* General Link Styles */
-a {
-    font-size: 24px;
-    color: #3195ff; /* Default link color */
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
+    /* General Link Styles */
+    a {
+      font-size: 24px;
+      color: #3195ff;
+      /* Default link color */
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
 
-a:hover, a:focus {
-    color: #0056b3; /* Darker shade on hover/focus */
-    text-decoration: underline;
-}
+    a:hover,
+    a:focus {
+      color: #0056b3;
+      /* Darker shade on hover/focus */
+      text-decoration: underline;
+    }
 
-a:active {
-    color: #003d80; /* Even darker shade when active (clicked) */
-}
+    a:active {
+      color: #003d80;
+      /* Even darker shade when active (clicked) */
+    }
 
-/* General Button Styles */
-button,
-input[type="button"],
-input[type="submit"],
-.input-button {
-    background-color: #001730; 
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
+    /* General Button Styles */
+    button,
+    input[type="button"],
+    input[type="submit"],
+    .input-button {
+      background-color: #001730;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
 
-button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-.input-button:hover {
-    background-color: #023872; /* Darker background on hover */
-    transform: scale(1.05); /* Slightly larger on hover */
-}
+    button:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    .input-button:hover {
+      background-color: #023872;
+      /* Darker background on hover */
+      transform: scale(1.05);
+      /* Slightly larger on hover */
+    }
 
-button:active,
-input[type="button"]:active,
-input[type="submit"]:active,
-.input-button:active {
-    background-color: #002043; /* Even darker background when active */
-    transform: scale(0.95); /* Slightly smaller on click */
-}
+    button:active,
+    input[type="button"]:active,
+    input[type="submit"]:active,
+    .input-button:active {
+      background-color: #002043;
+      /* Even darker background when active */
+      transform: scale(0.95);
+      /* Slightly smaller on click */
+    }
 
-button:focus,
-input[type="button"]:focus,
-input[type="submit"]:focus,
-.input-button:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 0 3px rgba(48, 71, 96, 0.5); /* Add a custom focus outline */
-}
+    button:focus,
+    input[type="button"]:focus,
+    input[type="submit"]:focus,
+    .input-button:focus {
+      outline: none;
+      /* Remove default outline */
+      box-shadow: 0 0 0 3px rgba(48, 71, 96, 0.5);
+      /* Add a custom focus outline */
+    }
 
-/* Disabled State */
-button:disabled,
-input[type="button"]:disabled,
-input[type="submit"]:disabled,
-.input-button:disabled {
-    background-color: #CCCCCC; /* Gray background for disabled state */
-    cursor: not-allowed;
-    opacity: 0.6; /* Reduce opacity */
-}
+    /* Disabled State */
+    button:disabled,
+    input[type="button"]:disabled,
+    input[type="submit"]:disabled,
+    .input-button:disabled {
+      background-color: #CCCCCC;
+      /* Gray background for disabled state */
+      cursor: not-allowed;
+      opacity: 0.6;
+      /* Reduce opacity */
+    }
 
 
     body {
@@ -321,10 +333,9 @@ input[type="submit"]:disabled,
       transform: translate(-50%, -50%) scale(2);
     }
 
-    .tail{
-      height : 960px;
+    .tail {
+      height: 960px;
     }
-
   </style>
 
   <meta charset="utf-8">
@@ -348,9 +359,16 @@ input[type="submit"]:disabled,
       <button class="button">
         <a href="#">home</a>
       </button>
+      <button class="button">
 
         <a href="#">training</a>
+      </button>
+
+      <button class="button">
+
         <a href="#contactusform">contact us</a>
+      </button>
+
     </p>
 
   </header>
@@ -633,7 +651,7 @@ input[type="submit"]:disabled,
 
 
 
-  
+
 
 
 
@@ -652,16 +670,16 @@ input[type="submit"]:disabled,
       <p>cybadroid &copy 2024 </p>
     </div>
   </footer>
-<div class="tail">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.40.0/css-doodle.min.js"></script>
+  <div class="tail">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.40.0/css-doodle.min.js"></script>
 
-  
-<css-doodle>
-  @grid: 48 / 100%;
-  background: @p(#eee, #fff);
-  margin: 2px;
-</css-doodle>
-</div>
+
+    <css-doodle>
+      @grid: 48 / 100%;
+      background: @p(#eee, #fff);
+      margin: 2px;
+    </css-doodle>
+  </div>
 </body>
 
 </html>
